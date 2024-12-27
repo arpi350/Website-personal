@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Interactive Love Button</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: pink;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 80px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ff6b6b;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.love-button {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.love-button:hover {
+    background-color: #ff3b3b;
+    transform: scale(1.1);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}</style></head> 
+ <body> 
+  <div class="container"> 
+   <h1>PENCET TOMBOL LOPE!</h1> <button id="loveButton" class="love-button"> ❤️ <span id="loveCount">0</span> </button> 
+   <p id="message" class="message">kalo kamu suka arpi pencet</p> 
+  </div> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">const loveButton = document.getElementById('loveButton');
+const loveCount = document.getElementById('loveCount');
+const message = document.getElementById('message');
+
+let count = 0;
+
+loveButton.addEventListener('click', () => {
+    count++;
+    loveCount.textContent = count;
+
+    // Change the message dynamically
+    if (count < 5) {
+        message.textContent = "kamuuu cantikk bangett lopyu";
+    } else if (count < 10) {
+        message.textContent = "nomii cantikk anak ibu inda";
+    } else if (count < 20) {
+        message.textContent = "makasii lope nyaa lopyu❤️";
+    } else if (count < 30) {
+        message.textContent = "kmu cantikk pake banget boleh dong minta pap hahaha";
+    } else if (count < 40) {
+        message.textContent = "nomii is a universe of my heart💫";
+    } else if (count < 50) {
+        message.textContent = "tanpaa nomi aku gatau nanti nasip nya gimana huhuu";
+    } else if (count < 60) {
+        message.textContent = "makasihh lagi lopenya udah banyak banget<3";
+    } else if (count < 70) {
+        message.textContent = "akuu pengenn ada di samping kmu ofc sampee tua juga boleh🙂‍↕️";
+    } else if (count < 80) {
+        message.textContent = "😝😝❤️❤️";
+    } else if (count < 90) {
+        message.textContent = "aku sayang kmu kaya di lagu ily3000🫠";
+    } else if (count < 100) {
+        message.textContet = "dahh capee berenti aku juga cape buatnya hahaha";
+    } 
+    message.textContent.style = 'italic'
+    
+    
+    // Button animation
+    loveButton.style.transform = "scale(0.00006)";
+    setTimeout(() => {
+        loveButton.style.transform = "scale(1)";
+    }, 200);
+});</script></body></html>
